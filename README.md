@@ -1,1 +1,852 @@
-# yangenze123582.github.io
+[index.html.html](https://github.com/user-attachments/files/24395962/index.html.html)
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o77大王专属o</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff; /* 白色背景 */
+            color: #5a3d5c;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .envelope {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #ff6b8b;
+            margin-top: 30px;
+        }
+        
+        .envelope::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background-color: #ffccd5;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .envelope::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background-color: #ffccd5;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4.5rem;
+            color: #ff6b8b;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #9d5c9a;
+            margin-bottom: 20px;
+        }
+        
+        .heart-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .heart {
+            color: #ff6b8b;
+            font-size: 2.5rem;
+            margin: 0 10px;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 30px 0;
+            padding: 0 20px;
+            position: relative;
+            z-index: 3;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #ff6b8b;
+        }
+        
+        .message p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .signature {
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: #ff6b8b;
+            margin-top: 30px;
+        }
+        
+        .photo-frame {
+            width: 250px;
+            height: 250px;
+            margin: 30px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 10px solid #ffccd5;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 3;
+        }
+
+        .photo-frame img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            border-radius:50%;
+        }
+        
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ffccd5, #ff6b8b);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .photo-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+        
+        .interactive-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .love-button {
+            background-color: #ff6b8b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.4);
+        }
+        
+        .love-button:hover {
+            background-color: #ff4d73;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 107, 139, 0.6);
+        }
+        
+        .music-player {
+            background-color: #9d5c9a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(157, 92, 154, 0.4);
+        }
+        
+        .music-player:hover {
+            background-color: #8a4b87;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(157, 92, 154, 0.6);
+        }
+        
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-heart {
+            position: absolute;
+            color: #ff6b8b;
+            font-size: 24px;
+            opacity: 0.7;
+            animation: float 6s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .new-year-countdown {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+            border: 3px dashed #ff6b8b;
+        }
+        
+        .countdown-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #9d5c9a;
+            margin-bottom: 15px;
+        }
+        
+        .countdown-numbers {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-item {
+            background-color: #ff6b8b;
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .countdown-value {
+            font-size: 1.8rem;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #9d5c9a;
+            font-size: 0.9rem;
+            padding: 20px;
+            border-top: 1px solid rgba(157, 92, 154, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.8rem;
+            }
+            
+            .envelope {
+                padding: 25px;
+            }
+            
+            .message {
+                padding: 20px;
+                font-size: 1.1rem;
+            }
+            
+            .photo-frame {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .envelope {
+                padding: 20px;
+            }
+            
+            .message {
+                padding: 15px;
+                font-size: 1rem;
+            }
+            
+            .countdown-item {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .countdown-value {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* 个性化部分 - 可以修改这些值 */
+        .personalized {
+            color: #ff6b8b;
+            font-weight: bold;
+        }
+        
+        .secret-message {
+            display: none;
+            background-color: #ffccd5;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #9d5c9a;
+            border: 3px dotted #ff6b8b;
+        }
+        
+        /* 雪花样式 */
+        .snowflakes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .snowflake {
+            position: absolute;
+            color: #e0f7ff;
+            font-size: 1em;
+            opacity: 0.8;
+            text-shadow: 0 0 5px rgba(173, 216, 230, 0.5);
+            animation: snowfall linear infinite;
+        }
+        
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-10vh) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(100vh) translateX(20px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* 雪花装饰样式 */
+        .snowflake-icon {
+            color: #b0e0e6;
+            font-size: 1.2em;
+        }
+        
+        /* 修复倒计时标题样式 */
+        #countdownTitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #9d5c9a;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 雪花背景 -->
+    <div class="snowflakes" id="snowflakes"></div>
+    
+    <!-- 漂浮的爱心背景 -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <div class="container">
+        <div class="envelope">
+            <div class="header">
+                <h1>仅供77大王查阅</h1>
+                <div class="subtitle">⭐新年快乐，鲜巧⭐</div>
+                <div class="heart-container">
+                    <div class="heart"><i class="fas fa-heart"></i></div>
+                    <div class="heart"><i class="fas fa-heart"></i></div>
+                    <div class="heart"><i class="fas fa-heart"></i></div>
+                    <div class="heart"><i class="fas fa-heart"></i></div>
+                    <div class="heart"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            
+            <!-- 照片区域 - 可以替换成你们真实的照片 -->
+            <div class="photo-frame">
+                <img src="E:\pythonProject1\our photo(1).png" alt="remeber" onerror="this.style.display='none';
+                document.getElementById('placeholder').style.display='flex';">
+                
+            </div>
+            </div>
+            
+            <div class="message">
+                <p>漂亮且大方的<span class="personalized">鲜巧</span>，</p>
+                
+                <p>2026即将到来希望你“知不足而奋进，看远山而行万里”，加油向公办本科冲击。</p>
+                
+                <p>能遇见你是我最开心的事，你的品德与性格的好是可遇不可求的，谢谢你能出现在我生活中</p>
+                
+                <p>新的一年，希望你继续保持努力。不要焦虑；正因为你有能力跨越，这个考验才会降临。</p>
+                
+                <p>从此山高路远我都祝福你。</p>
+                
+                <p>加油吧，2026年不要忘记我。</p>
+                
+                <div class="signature">未来的<br>警察<span class="personalized">杨恩泽大王</span></div>
+            </div>
+            
+            <!-- 新年倒计时 -->
+            <div class="new-year-countdown">
+                <div class="countdown-title" id="countdownTitle">距离我们一起进入2026还有</div>
+                <div class="countdown-numbers">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="days">0</div>
+                        <div class="countdown-label">天</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="hours">0</div>
+                        <div class="countdown-label">小时</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="minutes">0</div>
+                        <div class="countdown-label">分钟</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="seconds">0</div>
+                        <div class="countdown-label">秒</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 互动按钮 -->
+            <div class="interactive-section">
+                <button class="love-button" id="loveButton">
+                    <i class="fas fa-heart"></i> 点击查看特别祝福
+                </button>
+                
+                <button class="music-player" id="musicButton">
+                    <i class="fas fa-music"></i> 播放音乐😊
+                </button>
+            </div>
+            
+            <!-- 隐藏的特别消息 -->
+            <div class="secret-message" id="secretMessage">
+                无论世界如何变化，我们的友谊长存。<br>
+                愿你在人生道路上做自己“be myself”。<br>
+                       ❤77大王永远开心快乐❤
+            </div>
+            
+            <footer>
+                此网页使用VScode，pycham插件等实现。<br>
+                此网页仅为制作者个人意愿，无不良引导。<br>
+                © 最终解释权归杨恩泽大王所有。
+            </footer>
+        </div>
+    </div>
+
+    <!-- 音频元素 -->
+    <audio id="loveSong" loop>
+        <!-- 这里可以替换成你们喜欢的歌曲链接 -->
+        <source src="c:\Users\杨恩泽\Music\抖音20251230-201827_20251230_19390370.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+
+    <script>
+        // 创建雪花效果
+        function createSnowflakes() {
+            const container = document.getElementById('snowflakes');
+            const snowflakeCount = 80; // 雪花数量
+            
+            // 雪花形状
+            const snowflakeShapes = [
+                '❄', '❅', '❆', '*', '·', '✶', '✴', '✵'
+            ];
+            
+            for (let i = 0; i < snowflakeCount; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                
+                // 随机选择雪花形状
+                const shapeIndex = Math.floor(Math.random() * snowflakeShapes.length);
+                snowflake.textContent = snowflakeShapes[shapeIndex];
+                
+                // 随机位置
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                
+                // 随机大小
+                const size = Math.random() * 20 + 10;
+                snowflake.style.fontSize = `${size}px`;
+                
+                // 随机透明度
+                const opacity = Math.random() * 0.6 + 0.3;
+                snowflake.style.opacity = opacity;
+                
+                // 随机颜色（淡蓝色系）
+                const blueShades = ['#e0f7ff', '#b3e0ff', '#99d6ff', '#80ccff'];
+                const colorIndex = Math.floor(Math.random() * blueShades.length);
+                snowflake.style.color = blueShades[colorIndex];
+                
+                // 随机动画延迟和持续时间
+                const delay = Math.random() * 10;
+                const duration = Math.random() * 10 + 10;
+                snowflake.style.animationDelay = `${delay}s`;
+                snowflake.style.animationDuration = `${duration}s`;
+                
+                container.appendChild(snowflake);
+            }
+        }
+        
+        // 创建漂浮的爱心
+        function createFloatingHearts() {
+            const container = document.getElementById('floatingHearts');
+            const heartCount = 20;
+            
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('floating-heart');
+                heart.innerHTML = '<i class="fas fa-heart"></i>';
+                
+                // 随机位置
+                heart.style.left = `${Math.random() * 100}vw`;
+                
+                // 随机大小
+                const size = Math.random() * 20 + 15;
+                heart.style.fontSize = `${size}px`;
+                
+                // 随机颜色深浅
+                const opacity = Math.random() * 0.5 + 0.3;
+                heart.style.opacity = opacity;
+                
+                // 随机动画延迟和持续时间
+                const delay = Math.random() * 5;
+                const duration = Math.random() * 3 + 5;
+                heart.style.animationDelay = `${delay}s`;
+                heart.style.animationDuration = `${duration}s`;
+                
+                container.appendChild(heart);
+            }
+        }
+        
+        // 更新新年倒计时
+        function updateCountdown() {
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            
+            // 获取下一个新年的时间（明年1月1日 00:00:00）
+            let nextNewYear = new Date(currentYear + 1, 0, 1, 0, 0, 0, 0);
+            
+            // 如果当前时间还没到今年的1月1日，则目标时间是今年1月1日
+            const currentYearNewYear = new Date(currentYear, 0, 1, 0, 0, 0, 0);
+            
+            if (now < currentYearNewYear) {
+                nextNewYear = currentYearNewYear;
+            }
+            
+            const diff = nextNewYear - now;
+            
+            // 如果时间差为负数（不应该发生，但以防万一）
+            if (diff <= 0) {
+                // 已经是新年了
+                document.getElementById('countdownTitle').innerHTML = '🎉 新年快乐！ 🎉<br>让我们一起庆祝这个美好时刻！';
+                document.getElementById('days').textContent = '0';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+            
+            // 计算天、小时、分钟、秒
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            // 更新显示
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            createSnowflakes();
+            createFloatingHearts();
+            updateCountdown();
+            
+            // 每秒更新一次倒计时
+            setInterval(updateCountdown, 1000);
+            
+            // 获取DOM元素
+            const loveButton = document.getElementById('loveButton');
+            const musicButton = document.getElementById('musicButton');
+            const secretMessage = document.getElementById('secretMessage');
+            const loveSong = document.getElementById('loveSong');
+            let isPlaying = false;
+            
+            // 爱心按钮点击事件
+            loveButton.addEventListener('click', function() {
+                // 显示隐藏消息
+                if (secretMessage.style.display === 'block') {
+                    secretMessage.style.display = 'none';
+                    loveButton.innerHTML = '<i class="fas fa-heart"></i> 点击查看特别祝福';
+                } else {
+                    secretMessage.style.display = 'block';
+                    loveButton.innerHTML = '<i class="fas fa-heart"></i> 隐藏特别祝福';
+                    
+                    // 添加一些动画效果
+                    secretMessage.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        secretMessage.style.transition = 'transform 0.5s ease';
+                        secretMessage.style.transform = 'scale(1)';
+                    }, 10);
+                }
+                
+                // 添加一些漂浮爱心
+                for (let i = 0; i < 5; i++) {
+                    setTimeout(() => {
+                        createTemporaryHeart();
+                    }, i * 200);
+                }
+            });
+            
+            // 音乐按钮点击事件
+            musicButton.addEventListener('click', function() {
+                if (isPlaying) {
+                    loveSong.pause();
+                    musicButton.innerHTML = '<i class="fas fa-music"></i> 播放歌曲';
+                    isPlaying = false;
+                } else {
+                    loveSong.play().then(() => {
+                        musicButton.innerHTML = '<i class="fas fa-pause"></i> 暂停歌曲';
+                        isPlaying = true;
+                    }).catch(error => {
+                        alert("自动播放被阻止，请手动点击播放。或者更换音乐链接。");
+                        console.log("音频播放错误:", error);
+                    });
+                }
+            });
+            
+            // 创建临时爱心动画
+            function createTemporaryHeart() {
+                const heart = document.createElement('div');
+                heart.classList.add('floating-heart');
+                heart.innerHTML = '<i class="fas fa-heart"></i>';
+                heart.style.left = `${Math.random() * 80 + 10}vw`;
+                heart.style.fontSize = '30px';
+                heart.style.color = '#ff4d73';
+                heart.style.animationDuration = '3s';
+                heart.style.zIndex = '10';
+                
+                document.getElementById('floatingHearts').appendChild(heart);
+                
+                // 3秒后移除
+                setTimeout(() => {
+                    heart.remove();
+                }, 3000);
+            }
+            
+            // 创建临时雪花
+            function createTemporarySnowflake() {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.textContent = '❄';
+                snowflake.style.left = `${Math.random() * 80 + 10}vw`;
+                snowflake.style.fontSize = '25px';
+                snowflake.style.color = '#b3e0ff';
+                snowflake.style.animationDuration = '5s';
+                snowflake.style.zIndex = '10';
+                
+                document.getElementById('snowflakes').appendChild(snowflake);
+                
+                // 5秒后移除
+                setTimeout(() => {
+                    snowflake.remove();
+                }, 5000);
+            }
+            
+            // 添加个性化提示
+            const personalizedElements = document.querySelectorAll('.personalized');
+            personalizedElements.forEach(el => {
+                el.addEventListener('mouseenter', function() {
+                    this.style.color = '#9d5c9a';
+                    this.style.textDecoration = 'underline';
+                });
+                
+                el.addEventListener('mouseleave', function() {
+                    this.style.color = '#ff6b8b';
+                    this.style.textDecoration = 'none';
+                });
+            });
+            
+            // 添加页面加载时的动画
+            document.querySelector('.envelope').style.opacity = '0';
+            document.querySelector('.envelope').style.transform = 'translateY(50px)';
+            
+            setTimeout(() => {
+                document.querySelector('.envelope').style.transition = 'opacity 1s ease, transform 1s ease';
+                document.querySelector('.envelope').style.opacity = '1';
+                document.querySelector('.envelope').style.transform = 'translateY(0)';
+            }, 300);
+            
+            // 每隔一段时间添加一些雪花
+            setInterval(() => {
+                for (let i = 0; i < 3; i++) {
+                    setTimeout(() => {
+                        createTemporarySnowflake();
+                    }, i * 300);
+                }
+            }, 5000);
+        });
+        
+        // 添加键盘快捷键
+        document.addEventListener('keydown', function(event) {
+            // 按L键显示爱心
+            if (event.key === 'l' || event.key === 'L') {
+                for (let i = 0; i < 10; i++) {
+                    setTimeout(() => {
+                        createTemporaryHeart();
+                    }, i * 100);
+                }
+            }
+            
+            // 按S键显示雪花
+            if (event.key === 's' || event.key === 'S') {
+                for (let i = 0; i < 15; i++) {
+                    setTimeout(() => {
+                        createTemporarySnowflake();
+                    }, i * 100);
+                }
+            }
+            
+            // 按M键控制音乐
+            if (event.key === 'm' || event.key === 'M') {
+                document.getElementById('musicButton').click();
+            }
+        });
+        
+        // 临时爱心函数（需要在全局作用域中）
+        function createTemporaryHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('floating-heart');
+            heart.innerHTML = '<i class="fas fa-heart"></i>';
+            heart.style.left = `${Math.random() * 80 + 10}vw`;
+            heart.style.fontSize = '30px';
+            heart.style.color = '#ff4d73';
+            heart.style.animationDuration = '3s';
+            heart.style.zIndex = '10';
+            
+            document.getElementById('floatingHearts').appendChild(heart);
+            
+            // 3秒后移除
+            setTimeout(() => {
+                heart.remove();
+            }, 3000);
+        }
+        
+        // 临时雪花函数（需要在全局作用域中）
+        function createTemporarySnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = '❄';
+            snowflake.style.left = `${Math.random() * 80 + 10}vw`;
+            snowflake.style.fontSize = '25px';
+            snowflake.style.color = '#b3e0ff';
+            snowflake.style.animationDuration = '5s';
+            snowflake.style.zIndex = '10';
+            
+            document.getElementById('snowflakes').appendChild(snowflake);
+            
+            // 5秒后移除
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
